@@ -1,0 +1,10 @@
+[package]
+name = "rust_cuda_test_cpu"
+version = "0.1.0"
+edition = "2021"
+
+cust = "0.3"
+nanorand = "0.6.1"
+
+[build-dependencies]
+cuda_builder = "0.3"
