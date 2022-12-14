@@ -3,6 +3,7 @@ name = "rust_cuda_test_cpu"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies]
 cust = "0.3"
 nanorand = "0.6.1"
 
