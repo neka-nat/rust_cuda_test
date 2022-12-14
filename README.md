@@ -1,5 +1,12 @@
 # rust_cuda_test
 
-## Issue
-Can't compile on ubuntu.
-https://github.com/Rust-GPU/Rust-CUDA/blob/master/crates/rustc_codegen_nvvm/build.rs#L58
+## Build
+
+```sh
+docker build -t rust-cuda .
+```
+
+```sh
+docker run -it --gpus all -v $PWD:/root/rust-cuda --entrypoint /bin/bash rust-cuda
+cargo run
+```
