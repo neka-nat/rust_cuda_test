@@ -8,5 +8,6 @@ docker build -t rust-cuda .
 
 ```sh
 docker run -it --gpus all -v $PWD:/root/rust-cuda --entrypoint /bin/bash rust-cuda
+cd /root/rust-cuda
 cargo run
 ```
